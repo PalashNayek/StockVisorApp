@@ -1,0 +1,44 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_root_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/splash_image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/bg_splashscreen">
+
+            <ImageView
+                android:id="@+id/ic_emt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="30dp"
+                android:src="@mipmap/ic_emt_splashscreen"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loading"
+                android:id="@+id/loadingImg"
+                android:layout_below="@+id/ic_emt">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
